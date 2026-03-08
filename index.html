@@ -1618,65 +1618,65 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                                     </thead>
                                     <tbody>
                                         <tr class="bg-blue-title">
-                                            <td colspan="5" class="col-divider" style="text-align: center; padding-left: 0;">Qwen3-VL-8B</td>
-                                            <td colspan="9" style="text-align: center;">UniPixel-3B</td>
+                                            <td colspan="5" class="col-divider" style="text-align: center; padding-left: 0;">Qwen3-VL-32B</td>
+                                            <td colspan="9" style="text-align: center;">Sa2VA-InternVL2.5-8B</td>
                                         </tr>
                                         
                                         <tr>
                                             <td>w/o TCM</td>
-                                            <td>55.6</td><td>74.5</td><td>39.0</td><td class="col-divider">53.8</td>
-                                            <td>37.7</td><td>38.3</td><td>38.1</td>
-                                            <td>45.8</td><td>46.6</td><td>46.2</td>
-                                            <td>38.2</td><td>38.8</td><td>38.5</td>
+                                            <td>59.0</td><td>76.7</td><td>56.2</td><td class="col-divider">62.8</td>
+                                            <td>74.8</td><td>76.6</td><td>75.2</td>
+                                            <td>78.4</td><td>81.7</td><td>80.0</td>
+                                            <td>70.3</td><td>73.5</td><td>71.9</td>
                                         </tr>
                                         <tr>
                                             <td>w/ T only</td>
-                                            <td>55.4</td><td>74.9</td><td>39.3</td><td class="col-divider">54.1</td>
-                                            <td>42.5</td><td>42.9</td><td>42.7</td>
-                                            <td>49.5</td><td>50.4</td><td>50.0</td>
-                                            <td>44.6</td><td>45.5</td><td>45.0</td>
+                                            <td>59.3</td><td>76.4</td><td>56.3</td><td class="col-divider">62.9</td>
+                                            <td>76.6</td><td>79.3</td><td>78.0</td>
+                                            <td>79.7</td><td>82.9</td><td>81.3</td>
+                                            <td>73.0</td><td>76.1</td><td>74.6</td>
                                         </tr>
                                         <tr>
                                             <td>w/ M only</td>
-                                            <td>64.1</td><td>76.6</td><td>48.6</td><td class="col-divider">61.0</td>
-                                            <td class="heat-high">56.5</td><td class="heat-high">58.0</td><td class="heat-high">57.2</td>
-                                            <td class="heat-high">59.9</td><td class="heat-high">61.7</td><td class="heat-high">60.8</td>
-                                            <td class="heat-high">57.6</td><td class="heat-high">59.1</td><td class="heat-high">58.3</td>
+                                            <td>64.3</td><td>77.1</td><td>53.5</td><td class="col-divider">63.3</td>
+                                            <td>76.8</td><td>79.6</td><td>78.2</td>
+                                            <td>79.7</td><td>83.0</td><td>81.4</td>
+                                            <td>73.8</td><td>77.3</td><td>75.5</td>
                                         </tr>
                                         <tr>
                                             <td>w/ S only</td>
-                                            <td>64.0</td><td>77.1</td><td>49.3</td><td class="col-divider">61.4</td>
-                                            <td class="heat-mid">51.1</td><td class="heat-mid">52.2</td><td class="heat-mid">51.7</td>
-                                            <td class="heat-mid">53.2</td><td class="heat-mid">54.2</td><td class="heat-mid">53.7</td>
-                                            <td class="heat-mid">50.0</td><td class="heat-mid">51.0</td><td class="heat-mid">50.5</td>
+                                            <td>66.1</td><td class="heat-low">78.7</td><td class="heat-mid">60.1</td><td class="col-divider heat-low">67.2</td>
+                                            <td>76.9</td><td>79.7</td><td>78.3</td>
+                                            <td>79.9</td><td>83.2</td><td>81.5</td>
+                                            <td>74.8</td><td>78.5</td><td>76.4</td>
                                         </tr>
                                         <tr>
                                             <td>w/ T + M</td>
-                                            <td class="heat-low">64.7</td><td class="heat-low">76.9</td><td class="heat-low">49.1</td><td class="col-divider heat-low">61.5</td>
-                                            <td>41.8</td><td>43.8</td><td>42.8</td>
-                                            <td>43.8</td><td>45.7</td><td>44.7</td>
-                                            <td>42.2</td><td>44.0</td><td>43.1</td>
+                                            <td>63.8</td><td>76.7</td><td>54.0</td><td class="col-divider">63.3</td>
+                                            <td class="heat-low">77.0</td><td class="heat-low">79.8</td><td class="heat-low">78.4</td>
+                                            <td>79.8</td><td>83.1</td><td>81.4</td>
+                                            <td>73.8</td><td>77.3</td><td>75.5</td>
                                         </tr>
                                         <tr>
                                             <td>w/ T + S</td>
-                                            <td>63.8</td><td>76.3</td><td>49.3</td><td class="col-divider">61.2</td>
-                                            <td>39.7</td><td>41.3</td><td>40.5</td>
-                                            <td>41.8</td><td>43.1</td><td>42.5</td>
-                                            <td>40.2</td><td>41.9</td><td>41.1</td>
+                                            <td class="heat-low">67.0</td><td>78.5</td><td class="heat-low">59.6</td><td class="col-divider">67.1</td>
+                                            <td>76.9</td><td>79.7</td><td>78.3</td>
+                                            <td class="heat-low">80.0</td><td class="heat-low">83.3</td><td class="heat-mid">81.8</td>
+                                            <td class="heat-low">74.9</td><td class="heat-low">78.6</td><td class="heat-low">76.7</td>
                                         </tr>
                                         <tr>
                                             <td>w/ M + S</td>
-                                            <td class="heat-high">69.4</td><td class="heat-high">78.4</td><td class="heat-high">52.4</td><td class="col-divider heat-high">64.7</td>
-                                            <td>37.9</td><td>39.2</td><td>38.6</td>
-                                            <td>39.5</td><td>41.0</td><td>40.2</td>
-                                            <td>37.2</td><td>38.7</td><td>37.9</td>
+                                            <td class="heat-mid">68.4</td><td class="heat-mid">78.8</td><td>59.4</td><td class="col-divider heat-mid">67.5</td>
+                                            <td class="heat-mid">77.1</td><td class="heat-mid">79.9</td><td class="heat-mid">78.5</td>
+                                            <td class="heat-mid">80.1</td><td class="heat-mid">83.5</td><td class="heat-low">81.6</td>
+                                            <td class="heat-mid">75.3</td><td class="heat-mid">78.9</td><td class="heat-mid">77.1</td>
                                         </tr>
                                         <tr>
                                             <td>w/ T + M + S</td>
-                                            <td class="heat-mid">69.2</td><td class="heat-mid">78.2</td><td class="heat-mid">52.1</td><td class="col-divider heat-mid">64.4</td>
-                                            <td class="heat-low">49.1</td><td class="heat-low">50.1</td><td class="heat-low">49.6</td>
-                                            <td class="heat-low">50.5</td><td class="heat-low">51.7</td><td class="heat-low">51.1</td>
-                                            <td class="heat-low">47.4</td><td class="heat-low">48.3</td><td class="heat-low">47.9</td>
+                                            <td class="heat-high">69.2</td><td class="heat-high">79.1</td><td class="heat-high">60.5</td><td class="col-divider heat-high">68.3</td>
+                                            <td class="heat-high">77.3</td><td class="heat-high">80.2</td><td class="heat-high">78.8</td>
+                                            <td class="heat-high">80.2</td><td class="heat-high">83.6</td><td class="heat-high">81.9</td>
+                                            <td class="heat-high">75.4</td><td class="heat-high">79.1</td><td class="heat-high">77.3</td>
                                         </tr>
                                     </tbody>
                                 </table>

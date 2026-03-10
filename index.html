@@ -779,11 +779,11 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                 
                 <script>
                     const data = {
-                    "bmx-trees": {
+                    "duck_flying": {
                         "turns": [
                         {
                             // 注意：数据里的 image 换成了 video，后缀换成了视频格式(如.mp4)
-                            "video": "static/img/videos/bmx-trees.mp4",
+                            "video": "static/img/videos/duck_flying.mp4",
                             "question": "What is the primary trajectory movement of the camera in the video?",
                             "category": "Camera Motion and Orientation",
                             "options": [
@@ -795,37 +795,37 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                             "answer": "A"
                         },
                         {
-                            "video": "static/img/videos/bmx-trees.mp4",
-                            "question": "Does the child on the bicycle remain stationary or move during the video?",
+                            "video": "static/img/videos/duck_flying.mp4",
+                            "question": "At what second does the duck fly off the ground?",
                             "category": "Activity and Object Description",
                             "options": [
-                                "A. Remains completely stationary",
-                                "B. Moves intermittently with pauses",
-                                "C. Moves continuously from start to finish",
-                                "D. Moves only in the first half"
+                                "A. 0.1s",
+                                "B. 0.8s",
+                                "C. 1.2s",
+                                "D. 2s"
                             ],
                             "answer": "C"
                         },
                         {
-                            "video": "static/img/videos/bmx-trees.mp4",
-                            "question": "How does the boy on the bicycle move in relation to the graffiti wall as the scene progresses?",
+                            "video": "static/img/videos/duck_flying.mp4",
+                            "question": "In which direction does the duck fly at the end of the video?",
                             "category": "Movement Patterns and Trajectories",
                             "options": [
-                                "A. He rides away from the wall, moving deeper into the background.",
-                                "B. He rides parallel to the wall, staying at a consistent distance.",
-                                "C. He rides toward the wall and stops beside it.",
-                                "D. He rides in a circle around the wall."
+                                "A. Towards the camera",
+                                "B. Towards the river",
+                                "C. Towards the left side",
+                                "D. Towards the right side"
                             ],
                             "answer": "B"
                         },
                         ]
                     },
                     
-                    "lady-running": {
+                    "skater": {
                         "turns": [
                         {
-                            "video": "static/img/videos/lady-running.mp4",
-                            "question": "What is the primary trajectory movement of the camera in the video?",
+                            "video": "static/img/videos/skater.mp4",
+                            "question": "What is the primary trajectory movement of the camera at  the end of the video?",
                             "category": "Camera Motion and Orientation",
                             "options": [
                                 "A. Pans left and dollies forward ",
@@ -833,40 +833,40 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                                 "C. Pans from right to left",
                                 "D. Complex movements including panning left, tilting down, panning right and tilting up."
                             ],
-                            "answer": "A"
-                        },
-                        {
-                            "video": "static/img/videos/lady-running.mp4",
-                            "question": "What best describes the main activity in the video?",
-                            "category": "Activity and Object Description",
-                            "options": [
-                                "A. A person is walking slowly through a dining area",
-                                "B. A person is running energetically through a dining area",
-                                "C. A person is sitting quietly at a table",
-                                "D. A person is dancing in place"
-                            ],
                             "answer": "B"
                         },
                         {
-                            "video": "static/img/videos/lady-running.mp4",
-                            "question": "How does the woman in the colorful top move through the room as the scene progresses?",
-                            "category": "Movement Patterns and Trajectories",
+                            "video": "static/img/videos/skater.mp4",
+                            "question": "At the beginning of the video, relative to the man in black's perspective, where is the man in yellow positioned?",
+                            "category": "Activity and Object Description",
                             "options": [
-                                "A. She walks slowly toward the back of the room, then turns and walks back toward the camera.",
-                                "B. She runs directly toward the camera, then stops near the foreground.",
-                                "C. She moves steadily away from the camera, weaving between tables and people.",
-                                "D. She remains seated at a table near the entrance for the entire scene."
+                                "A. To his left",
+                                "B. To his right",
+                                "C. To his front-left",
+                                "D. To his front-right"
                             ],
                             "answer": "C"
+                        },
+                        {
+                            "video": "static/img/videos/skater.mp4",
+                            "question": "How does the distance between two men change?",
+                            "category": "Movement Patterns and Trajectories",
+                            "options": [
+                                "A. Get closer first and then farther away",
+                                "B. First get farther, then get closer",
+                                "C. The distance remains stable and unchanged",
+                                "D. The distance gradually increases"
+                            ],
+                            "answer": "A"
                         },
                         ]
                     },
                 
-                    "sav_017357": {
+                    "dog_chase": {
                         "turns": [
                         {
-                            "video": "static/img/videos/sav_017357.mp4",
-                            "question": "What is the camera angle relative to the white dog?",
+                            "video": "static/img/videos/dog_chase.mp4",
+                            "question": "What is the camera angle relative to the black dog?",
                             "category": "Camera-Object Interaction",
                             "options": [
                                 "A. Eye-Level: The camera is at roughly the same height as the white dog.",
@@ -877,28 +877,28 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                             "answer": "B"
                         },
                         {
-                            "video": "static/img/videos/sav_017357.mp4",
-                            "question": "How many animals cross the road during the video?",
+                            "video": "static/img/videos/dog_chase.mp4",
+                            "question": "In which direction is the duck moving when the black dog lay down for the second time?",
                             "category": "Activity and Object Description",
                             "options": [
-                                "A. 1",
-                                "B. 2",
-                                "C. 3",
-                                "D. 4"
+                                "A. To the left",
+                                "B. To the right",
+                                "C. Remain stationary",
+                                "D. Toward the camera"
                             ],
                             "answer": "A"
                         },
                         {
-                            "video": "static/img/videos/sav_017357.mp4",
-                            "question": "What is the final destination of the dog’s movement in the scene?",
+                            "video": "static/img/videos/dog_chase.mp4",
+                            "question": "How does the distance between the black dog and the duck change throughout the video?",
                             "category": "Movement Patterns and Trajectories",
                             "options": [
-                                "A. It enters a house through an open doorway.",
-                                "B. It jumps into the back of the white pickup truck.",
-                                "C. It sits down on the sidewalk near the silver SUV.",
-                                "D. It runs off-screen toward the left side of the street."
+                                "A. It first decreases, then increases",
+                                "B. It first increases, then decreases, and finally increases again",
+                                "C. The distance remains constant",
+                                "D. The distance increases gradually"
                             ],
-                            "answer": "A"
+                            "answer": "B"
                         },
                         
                         ]

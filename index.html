@@ -264,6 +264,7 @@
                     border-radius: 12px;
                     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
                     padding: 30px;
+                    position: relative;  /* 为绝对定位的子元素提供参考 */
                 }
 
                 /* 2. 下拉菜单与按钮基础样式 */
@@ -293,6 +294,31 @@
                     color: white;
                     font-weight: bold;
                     border-color: #007bff;
+                }
+
+                /* 3.5 场景导航按钮 - 左上角小按钮 */
+                .scene-nav-buttons {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    z-index: 10;
+                    display: flex;
+                    gap: 5px;
+                }
+                .scene-nav-buttons button {
+                    padding: 6px 12px;
+                    font-size: 13px;
+                    background-color: rgba(255, 255, 255, 0.95);
+                    border: 1px solid #007bff;
+                    border-radius: 4px;
+                    color: #007bff;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+                .scene-nav-buttons button:hover {
+                    background-color: #007bff;
+                    color: white;
                 }
 
                 /* 4. 视频容器 (原来是图片容器) */
@@ -748,8 +774,10 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                 <section>
                 <div class="ncontainer">
                 
-                    <label for="scan-select">Select Scene:</label>
-                    <select id="scan-select"></select>
+                    <div class="scene-nav-buttons">
+                        <button onclick="prevScene()">◀ Prev</button>
+                        <button onclick="nextScene()">Next ▶</button>
+                    </div>
                 
                     <div class="turn-buttons" id="turn-buttons"></div>
                 
@@ -901,24 +929,36 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                 
                     let currentScene = "";
                     let currentTurn = 0;
-                
+                    let scenes = [];
+
                     function populateSceneSelector() {
-                    const select = document.getElementById("scan-select");
-                    for (const scene in data) {
-                        const option = document.createElement("option");
-                        option.value = scene;
-                        option.textContent = scene;
-                        select.appendChild(option);
+                    // Get all scene names
+                    scenes = Object.keys(data);
+                    currentScene = scenes[0];
+                    currentTurn = 0;
+                    updateUI();
                     }
-                
-                    select.addEventListener("change", () => {
-                        currentScene = select.value;
+
+                    function nextScene() {
+                    const currentIndex = scenes.indexOf(currentScene);
+                    if (currentIndex < scenes.length - 1) {
+                        currentScene = scenes[currentIndex + 1];
                         currentTurn = 0;
                         updateUI();
-                    });
-                
-                    currentScene = select.options[0].value;
-                    updateUI();
+                    } else {
+                        alert("Already at the last scene.");
+                    }
+                    }
+
+                    function prevScene() {
+                    const currentIndex = scenes.indexOf(currentScene);
+                    if (currentIndex > 0) {
+                        currentScene = scenes[currentIndex - 1];
+                        currentTurn = 0;
+                        updateUI();
+                    } else {
+                        alert("Already at the first scene.");
+                    }
                     }
                 
                     function updateUI() {

@@ -70,7 +70,9 @@ body {
     border: 3px solid #508af6;
     border-radius: 10px;
     background-color: #d6eefb;
-    flex: 1 1 100px; /* Allow flex items to grow and shrink */
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    justify-content: center; /* Center content vertically */
 }
 
 .icon-link:hover {

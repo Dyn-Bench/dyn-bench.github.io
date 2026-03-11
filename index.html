@@ -459,12 +459,7 @@
                         <span style="font-size: 1.8em; display: block; color: #2D1B4E; margin-bottom: 0.3em; font-style: italic; font-family: 'Times New Roman', serif;">Thinking in Dynamics</span>
                         <span style="font-size: 1.0em; display: block; color: #4A235A; font-family: 'Times New Roman', serif;">How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World</span>
                     </h1>
-                    <!-- <h2>
-                        <i>
-                            "Without spatial intelligence, AGI is fundamentally incomplete." <br>
-                            <span style="display: block; text-align: right;">——Fei-Fei Li</span>
-                        </i>
-                    </h2> -->
+
                     <div class="button-container">
                         <!-- replace arxiv -->
                         <a href="https://arxiv.org/abs/2512.03000" class="button paper-link" target="_blank">
@@ -595,7 +590,6 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                     "duck_flying": {
                         "turns": [
                         {
-                            // 注意：数据里的 image 换成了 video，后缀换成了视频格式(如.mp4)
                             "video": "static/img/videos/duck_flying.mp4",
                             "question": "What is the primary trajectory movement of the camera in the video?",
                             "category": "Camera Motion and Orientation",
@@ -905,12 +899,6 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
                     </figcaption>
                 </figure>
             </d-figure>
-
-            <!-- <d-figure id="fig-studyadapter" >
-                <figure>
-                    <img data-zoomable="" draggable="false" src="static/img/DynamicGen_pipeline.png" alt="Stage 1 Pipeline">
-                </figure>
-            </d-figure> -->
         </div>
 
         <div class="vision-block">
@@ -961,7 +949,7 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
         </div>
         <br>
         </br>
-        <!-- <h2 class="title is-3 section-title">Leaderboard</h2> -->
+
             <div class="leaderboard-card">
                 <div class="card">
                     <div class="card-content p-0">
@@ -1616,12 +1604,6 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
         </br>
 
                 
-        <!-- <div id="conclusion" style="position: relative; margin-top: 40px; margin-bottom: 0px;">
-            <h1 class="text" style="margin-top:0px; margin-bottom:10px">Conclusion</h1>
-            <p class="text">
-                In this work, we addressed the critical limitations in traditional 4D data curation concerning scalability, physical reality, and modality diversity. We introduced DynamicGen, a novel automated pipeline leveraging foundation models for video filtering, metric-scale geometric and moving object recovery, alongside hierarchical detailed semantic captioning from raw videos. We rigorously validated the capabilities of DynamicGen through standard benchmarks for video depth and camera pose/intrinsics estimation, qualitative generalization analysis on diverse web videos, and human/LLM-assisted evaluations confirming the high quality of the generated captions Utilizing DynamicGen, we successfully constructed DynamicVerse, a large-scale 4D dataset offering over 100K dynamic scenes with rich physically-aware multi-modal annotations. Collectively, this work provides both a robust and scalable methodology for 4D data generation and a comprehensive new resource, DynamicVerse, to drive future research in dynamic 4D scene understanding.
-            </p>
-        </div> -->
 
         <div id="bibtex" style="position: relative; margin-top: 40px; margin-bottom: 40px; color: gray;">
             <h2 class="text" style="margin-top:0px; margin-bottom:10px">BibTeX</h2>
@@ -1637,34 +1619,6 @@ Notably, conventional prompting strategies (<i>e.g.</i>, chain-of-thought or cap
             url={https://arxiv.org/abs/2512.03000}, 
         }</pre>
         </div>
-
-        <!-- <div id="bibtex" style="position: relative; margin-top: 40px; margin-bottom: 0px; color: gray;">
-            <h2 class="text" style="margin-top:0px; margin-bottom:10px">BibTeX</h2> -->
-            <!-- <p class="bibtex">
-                @misc{wen2025dynamicversephysicallyawaremultimodalframework,
-                    title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling}, 
-                    author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
-                    year={2025},
-                    eprint={2512.03000},
-                    archivePrefix={arXiv},
-                    primaryClass={cs.CV},
-                    url={https://arxiv.org/abs/2512.03000}, 
-                }
-            </p> -->
-            <!-- <pre><code>
-                 @misc{wen2025dynamicversephysicallyawaremultimodalframework,
-                    title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling}, 
-                    author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
-                    year={2025},
-                    eprint={2512.03000},
-                    archivePrefix={arXiv},
-                    primaryClass={cs.CV},
-                    url={https://arxiv.org/abs/2512.03000}, 
-                }
-            </code></pre> -->
-            <!-- <p class="text" style="text-align: right;">
-                The website template was originally borrowed from <a href="https://cambrian-mllm.github.io/">here</a>.
-            </p> -->
         </div>
         
         <script src="./static/js/nav-bar.js"></script>

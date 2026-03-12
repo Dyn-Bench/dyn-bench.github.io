@@ -70,9 +70,7 @@ body {
     border: 3px solid #508af6;
     border-radius: 10px;
     background-color: #d6eefb;
-    width: 100px; /* Fixed width */
-    height: 100px; /* Fixed height */
-    justify-content: center; /* Center content vertically */
+    flex: 1 1 100px; /* Allow flex items to grow and shrink */
 }
 
 .icon-link:hover {
@@ -1086,6 +1084,148 @@ h2.text {
 
 .abstract {
     font-size: 1.35rem;
+}
+
+.author-block {
+    text-align: center;
+    margin: 30px auto 10px;
+    width: 150%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1200px;
+    line-height: 2;
+}
+
+.author-block .authors {
+    font-size: 1.15rem;
+    color: #333;
+}
+
+.author-block .authors a {
+    color: #333;
+    text-decoration: none;
+}
+
+.author-block .authors a:hover {
+    color: #1a3a6b;
+    text-decoration: underline;
+}
+
+.author-block .authors sup {
+    font-size: 0.7em;
+    color: #888;
+    margin: 0 1px;
+}
+
+.author-block .affiliations {
+    font-size: 1.0rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+.author-block .affiliations sup {
+    font-size: 0.7em;
+    color: #888;
+    margin-right: 1px;
+}
+
+.author-block .affiliations .aff-logo {
+    height: 1.1em;
+    vertical-align: middle;
+    margin: 0 2px 0 4px;
+}
+
+.author-block .author-notes {
+    font-size: 0.92rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+.author-block .author-venue {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #888;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .author-block {
+        width: 100%;
+        left: auto;
+        transform: none;
+    }
+    .author-block .authors {
+        font-size: 1.0rem;
+    }
+}
+
+.highlight-card {
+    width: 150%;
+    max-width: 1200px;
+    margin: 30px auto 30px;
+    margin-left: -18%;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+    padding: 36px 44px 30px;
+    text-align: left;
+}
+
+.highlight-card h3 {
+    font-size: 1.55em;
+    font-weight: 700;
+    margin: 0 0 22px 0;
+    color: #222;
+    width: 100%;
+    margin-left: 0;
+}
+
+.highlight-card ol {
+    list-style: none;
+    counter-reset: hl-counter;
+    padding: 0;
+    margin: 0;
+}
+
+.highlight-card ol li {
+    counter-increment: hl-counter;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #333;
+}
+
+.highlight-card ol li::before {
+    content: counter(hl-counter) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.highlight-card ol li .hl-key {
+    font-weight: 700;
+    color: #1a3a6b;
+    text-decoration: underline;
+    text-decoration-color: #1a3a6b;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+}
+
+@media (max-width: 768px) {
+    .highlight-card {
+        width: 100%;
+        margin-left: 0;
+        padding: 24px 20px 20px;
+        border-radius: 10px;
+    }
+    .highlight-card ol li {
+        font-size: 0.97rem;
+    }
 }
 
 .auto-video {

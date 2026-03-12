@@ -63,6 +63,7 @@ body {
     display: flex;
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center the image and text */
+    justify-content: center; /* Center vertically */
     text-align: center; /* Center text below the image */
     color: inherit; /* Inherit color from parent */
     padding: 10px; /* Add padding around the link */
@@ -70,7 +71,9 @@ body {
     border: 3px solid #508af6;
     border-radius: 10px;
     background-color: #d6eefb;
-    flex: 1 1 100px; /* Allow flex items to grow and shrink */
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    flex: 0 0 auto; /* Prevent flex items from growing and shrinking */
 }
 
 .icon-link:hover {
@@ -79,7 +82,10 @@ body {
 
 @media (max-width: 600px) {
     .icon-link {
-        flex: 1 1 45%; /* Allow each icon link to take up about half the width */
+        width: 110px; /* Slightly smaller on mobile */
+        height: 110px;
+        padding: 10px;
+        font-size: 0.9em;
     }
 }
 
